@@ -30,7 +30,7 @@ class CrearTablaClientes extends Migration
             $table->string('email',128)->nullable();
             $table->string('telefono',60)->nullable();
             $table->string('codigo_cliente',64)->nullable();
-            $table->boolean('status')->default(true);
+            $table->boolean('isActivo')->default(true);
             $table->foreign('empresa_id')
                 ->references('id')
                 ->on('empresas')->onDelete('cascade');

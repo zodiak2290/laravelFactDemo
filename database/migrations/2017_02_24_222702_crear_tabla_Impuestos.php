@@ -21,7 +21,7 @@ class CrearTablaImpuestos extends Migration
             $table->enum('tipo',['R','T']);
             $table->enum('ambito',['L','F']);
             $table->string('grupo',45)->nullable();
-            $table->boolean('status')->default(true)->nullable();
+            $table->boolean('estado')->default(true)->nullable();
         });
     }
 
